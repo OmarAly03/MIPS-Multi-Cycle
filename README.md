@@ -2,7 +2,7 @@
 
 This repository contains an educational implementation of a MIPS multi-cycle processor using Verilog. The project is structured in modular form, with each file representing a key hardware component such as the ALU, control units, registers, memory, and various multiplexers. This modular architecture makes it easy to understand, modify, and extend the design.
 
-The goal of this project is to provide a clear and concise reference for anyone who wants to implement a MIPS multi-cycle processor from scratch. Each module is briefly explained to keep the documentation focused and accessible without overwhelming the reader.
+The goal of this project is to provide a clear and concise reference for anyone who wants to implement a MIPS multi-cycle processor from scratch. Each module is briefly explained to keep the documentation focused and accessible.
 
 ![MIPS_Multicycle_Processor_Schematic](https://github.com/user-attachments/assets/56d4d178-b7d8-49ef-8be7-21b03c928a29)
 
