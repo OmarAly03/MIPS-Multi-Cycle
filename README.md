@@ -101,3 +101,30 @@ Integrates all submodules (control unit, ALU, registers, memory, multiplexers, e
 ## Testbench Module
 Verifies that the processor operates correctly through simulation.
 - **Function:** Instantiates the design, generates clock/reset signals, applies test stimuli, and monitors key signals.
+
+---
+
+## Test Program
+Below is a table summarizing the test program instructions loaded into memory in the text section:
+
+| Memory Address | Instruction Hex | Assembly Instruction   |
+|----------------|-----------------|------------------------|
+| 1024           | 20020005        | addi $2, $0, 5         |
+| 1028           | 2003000C        | addi $3, $0, 12        |
+| 1032           | 2067FFF7        | add $1, $2, $3         |
+| 1036           | 00E22025        | add $4, $7, $2         |
+| 1040           | 00642824        | or $5, $3, $4          |
+| 1044           | 00A42820        | and $5, $3, $4         |
+| 1048           | 00A52820        | add $5, $5, $4         |
+| 1052           | 00A52820        | add $5, $5, $4         |
+| 1056           | 0064202A        | slt $4, $3, $4         |
+| 1060           | 0064202A        | slt $4, $3, $4         |
+| 1064           | 20050000        | addi $5, $0, 0         |
+| 1068           | 00E2202A        | slt $4, $7, $2         |
+| 1072           | 00853820        | add $7, $4, $5         |
+| 1076           | 00E23822        | sub $7, $7, $2         |
+| 1080           | AC670044        | sw $7, 68($3)          |
+| 1084           | 8C020050        | lw $2, 80($0)          |
+| 1088           | 08000112        | j end                  |
+| 1092           | 20020001        | addi $2, $0, 1         |
+| 1096           | AC020054        | sw $2, 84($0)          |
